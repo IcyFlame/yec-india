@@ -13,6 +13,15 @@
 	<script src="menubar/menu_jquery.js"></script>
 	<script src="js/jquery-2.1.0.min.js"></script>
 
+	<script>
+
+	$( window ).scroll(function() {
+		$("#topbutton").fadeIn("slow");
+	// $("#topbutton").css( "display", "inline" ).fadeOut( "slow" );
+});
+
+	</script>
+
 	<style>
 
 	.headings{
@@ -20,8 +29,8 @@
 	}
 
 	</style>
-	
-	
+
+
 
 </head>
 
@@ -33,7 +42,7 @@
 
 			<img src="logo.jpg" width="150" height="150"/><br/>
 
-			
+
 		</div>
 
 		<div class="col-md-8" style="background:;">
@@ -80,7 +89,7 @@
 
 				We at YEC, want to be at the junction of the triangle that is formed by the Academia, the Industry, Energy sector in specific, and the Government. We want to act as a gateway between these three agencies, each of which plays an important role in the Energy sector.
 
-				
+
 			</h2>
 
 			<h1 class="headings">Why?</h1>
@@ -93,7 +102,7 @@
 
 				But we want to improve things. Change things, and move forward. So, that when we leave this world, it is slightly better than when we entered it. <br/>
 
-				
+
 			</h2>
 
 			<br/>
@@ -129,6 +138,9 @@
 		</div>
 
 	</div>
+
+	<button id="topbutton" onclick="window.scrollTo(0,0);" class="btn btn-primary" style="bottom: 20px; right:30px; position: fixed; display: none">Top</button>
+
 
 </body>
 
